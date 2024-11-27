@@ -20,6 +20,8 @@ Create container: docker build .
 
 start container: docker run [ID]
 
+start a container and remove it whenever we stop it: docker run -p 3000:[EXPOSE] -d --rm [ID]
+
 if we have container: docker start [ID]
 
 stop container: docker stop [NAME or ID]
