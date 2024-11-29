@@ -41,3 +41,11 @@ copy files or folders into a running container or out of running container: dock
 for example: docker cp dummy/test.txt [NAME] or docker cp dummy/. [NAME]:/test
 
 copy file or folder in container: docker cp [NAME]:/test [folder] or docker cp [NAME]:/test/test.txt [folder]
+
+create custom name container: docker run -p 3000:[EXPOSE] -d --rm --name [NEW NAME] [ID]
+
+create custom name image: docker build -t [NEW NAME]:[TAG] .
+
+for example: docker build -t goals:latest . 
+
+now we can use tag: docker run -p 3000:[EXPOSE] -d --rm --name [NEW NAME]:[TAG]
