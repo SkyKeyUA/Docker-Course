@@ -33,3 +33,5 @@ remove container (multi): docker rm [NAME] [NAME]
 remove images (multi): docker rmi [ID] [ID]
 
 remove all unused images: docker image prune
+
+more information about image: docker image inspect [ID]
