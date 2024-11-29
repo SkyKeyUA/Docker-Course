@@ -35,3 +35,9 @@ remove images (multi): docker rmi [ID] [ID]
 remove all unused images: docker image prune
 
 more information about image: docker image inspect [ID]
+
+copy files or folders into a running container or out of running container: docker cp [folder or file] [NAME]
+
+for example: docker cp dummy/test.txt [NAME] or docker cp dummy/. [NAME]:/test
+
+copy file or folder in container: docker cp [NAME]:/test [folder] or docker cp [NAME]:/test/test.txt [folder]
